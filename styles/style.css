@@ -37,6 +37,7 @@ header {
 }
 
 /* Header Menus End  */
+/* Header Banner Start  */
 .header-banner-section {
     max-width: 1400px;
     margin: auto;
@@ -296,3 +297,85 @@ footer {
 }
 
 /* -----footer-section end---- */
+
+/* -------------Resonsive Media Query Start----------- */
+@media screen and (max-width: 576px) and (min-width: 0) {
+
+    .header-banner-section,
+    .features-section,
+    .experiance-section,
+    .fact-section,
+    .sponsores-section,
+    .pre-footer {
+        max-width: 576px;
+    }
+
+    .logo h1 {
+        font-size: 30px;
+        padding: 20px 0 0 20px;
+    }
+
+    .menus ul {
+        flex-direction: column;
+        padding: 20px 20px 0 0;
+    }
+
+    .header-banner-section {
+        padding: 0px 0;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    /* ---------features query -------- */
+    .features-section {
+        flex-direction: column-reverse;
+        padding: 50px 0 0 0;
+    }
+
+    .arc-image {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        grid-gap: 10px !important;
+    }
+
+    /* ---------Experiance query -------- */
+    .experiance-details {
+        flex-direction: column;
+        display: block;
+    }
+
+    .experiance-texts {
+        width: 100%;
+    }
+
+    .experiance-title h1 {
+        font-size: 25px;
+    }
+
+    .experiance-des p {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    .experiance-card {
+        margin: 30px;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+    }
+
+    .experiance-image img {
+        width: 100%;
+    }
+
+    .experiance-year {
+        top: -100px;
+        right: -8%;
+    }
+}
+
+
+/* -------------Resonsive Media Query End----------- */
